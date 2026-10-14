@@ -1,0 +1,4 @@
+2026-10-14T00:00:01Z INFO login email=jane.doe@acme.co.uk ip=81.2.69.142
+2026-10-14T00:00:02Z ERROR payment failed card=4111 1111 1111 1111
+{"level":"info","ssn":"123-45-6789","nino":"AB 12 34 56 C","password":"hunter22"}
+2026-10-14T00:00:04Z INFO refund to GB82 WEST 1234 5698 7654 32 phone=+44 20 7946 0958 dob=1990-01-02

@@ -1,0 +1,54 @@
+{
+  "name": "pii-log-warden",
+  "version": "1.0.0",
+  "description": "Find and redact PII in log files: emails, phone numbers, public IPs, Luhn-valid card numbers, US SSNs, UK National Insurance numbers, checksum-valid IBANs, passwords/secrets in fields and dates of birth. Masked report, in-place or copy redaction. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "pii-log-warden": "bin/pii-log-warden.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "pii",
+    "logs",
+    "redaction",
+    "gdpr",
+    "data-protection",
+    "privacy",
+    "pci-dss",
+    "log-scanner",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/pii-log-warden.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/pii-log-warden/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/pii-log-warden#readme"
+}
