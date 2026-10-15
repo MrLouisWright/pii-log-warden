@@ -1,5 +1,7 @@
 # pii-log-warden
 
+[![npm version](https://img.shields.io/npm/v/pii-log-warden.svg)](https://www.npmjs.com/package/pii-log-warden) [![CI](https://github.com/MrLouisWright/pii-log-warden/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/pii-log-warden/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/pii-log-warden.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Find and redact personal data in log files: emails, phone numbers, IP addresses, card numbers and national IDs.
 
 Logs are where personal data leaks quietly: a debug line prints the whole request body, an error handler dumps the card number, a JSON logger serialises the user object with its email, date of birth and password. Under GDPR, PCI DSS and most security reviews those logs then become regulated data. `pii-log-warden` scans log files, directories or stdin, reports every match **masked** (it never repeats the raw value in its own output) with file, line, severity and a fix, and can redact the files in place or into a clean copy.
