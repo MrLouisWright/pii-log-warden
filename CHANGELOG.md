@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 - 2026-10-20
+
+- Docs: README badges, credit and support sections, links to the project site; homepage now points to the project site.
+- No changes to the package code.
+
 ## 1.0.0 (2026-10-14)
 
 First release, by Louis Wright.

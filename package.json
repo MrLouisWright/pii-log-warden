@@ -1,6 +1,6 @@
 {
   "name": "pii-log-warden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Find and redact PII in log files: emails, phone numbers, public IPs, Luhn-valid card numbers, US SSNs, UK National Insurance numbers, checksum-valid IBANs, passwords/secrets in fields and dates of birth. Masked report, in-place or copy redaction. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
