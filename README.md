@@ -65,7 +65,7 @@ HIGH     test/fixtures/bad/app.log:3 UK National Insurance number AB********* C 
 ## Options
 
 ```text
-pii-log-warden 1.0.0 — find and redact PII in log files
+pii-log-warden 1.0.1 — find and redact PII in log files
 
 Usage: pii-log-warden [files or dirs...] [options]     (use - to read stdin)
 
@@ -170,12 +170,20 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev pii-log-warden
+```
+
 ```js
 import { scanText, redactText, check } from "pii-log-warden";
 scanText("login jane@acme.io from 81.2.69.142"); // [{ rule, line, column, value, masked }]
 redactText(line).text; // "login [REDACTED:email] from [REDACTED:ip-address]"
 const report = check(["logs"]);
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("pii-log-warden")` from CommonJS.
 
 Types are included.
 
